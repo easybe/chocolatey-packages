@@ -2,6 +2,10 @@ import-module au
 
 $releases = 'https://github.com/ticketmaster/spinner/releases'
 
+function global:au_SearchReplace {
+    @{ }
+}
+
 function global:au_BeforeUpdate { Get-RemoteFiles -Purge -NoSuffix }
 
 function global:au_GetLatest {
